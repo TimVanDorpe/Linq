@@ -1,0 +1,61 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using Linq.Models;
+
+namespace Linq
+{
+    public class Step3
+    {
+        public void Execute()
+        {
+            Console.WriteLine("\nStep 3: Where en lambda expressies\n");
+            IEnumerable<Location> locationsVisited = TravelOrganizer.PlacesVisited;
+            int sumDistances = locationsVisited.Sum(l => l.Distance);
+            Console.WriteLine("De som van alle afstanden is {0} miles", sumDistances);
+            int[] results = { 12, 15, 7, 9, 10, 5, 0, 20 };
+            int nrOfPasses = results.Count(r => r >= 10);
+            Console.WriteLine("De resultaten bevatten {0} geslaagden", nrOfPasses);
+            Console.WriteLine();
+            string[] cities = {
+                                  "London", "Amsterdam", "San Francisco", "Las Vegas", "Boston", "Raleigh", "Chicago",
+                                  "Charlestown", "Helsinki", "Nice", "Dublin"
+                              };
+            // filter: steden waarvan de naam langer dan 5 posities
+            IEnumerable<string> citiesWithlongNames = cities.Where(c => c.Length > 5);
+
+            // onderstaande regel uit commentaar halen: demo deferred execution
+            // cities[0] = "Oostende";
+            // in bovenstaande query .ToList() toevoegen: demo immediate execution
+            Console.WriteLine("Steden met namen langer dan 5 karakters:");
+            foreach (var city in citiesWithlongNames)
+            {
+                Console.WriteLine(city);
+            }
+            Console.WriteLine();
+            // steden waarvan de naam langer dan 5 posities, gesorteerd op naam
+            IEnumerable<string> orderedPlaces = cities.Where(c => c.Length > 5).OrderBy(c => c).ToList();
+            Console.WriteLine("Gesorteerde lijst van steden met namen langer dan 5 karakters:");
+            foreach (var city in orderedPlaces)
+            {
+                Console.WriteLine(city);
+            }
+            Console.WriteLine();
+            // steden waarvan de naam langer is dan 5 posities en starten met de letter 'S'
+            // gesorteerd dalend op lengte van de naam, en dan op de naam zelf
+            string[] cities2 = {
+                                  "London", "Amsterdam", "San Francisco", "Las Vegas", "Boston", "Raleigh", "Chicago",
+                                  "Charlestown", "Helsinki", "Nice", "Dublin", "San Anselmo", "San Diego", "San Mateo"
+                              };
+            IEnumerable<string> selectedCities = cities2.Where(c => c.StartsWith("S") && c.Length > 5).
+                OrderByDescending(c => c.Length).ThenBy(c => c);
+            Console.WriteLine("Steden met namen langer dan 5 karakters, en beginnend met 'S', dalend gesorteerd op lengte van de naam, dan op naam:");
+            foreach (string city in selectedCities)
+                Console.WriteLine(city);
+            Console.WriteLine();
+
+            Console.WriteLine("Druk op enter om verder te gaan...");
+            Console.ReadLine();
+        }
+    }
+}

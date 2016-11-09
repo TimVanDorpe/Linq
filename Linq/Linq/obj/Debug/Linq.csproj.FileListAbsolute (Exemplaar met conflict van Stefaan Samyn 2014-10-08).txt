@@ -1,0 +1,18 @@
+c:\temp\Linq\Linq\bin\Debug\Linq.exe.config
+c:\temp\Linq\Linq\bin\Debug\Linq.exe
+c:\temp\Linq\Linq\bin\Debug\Linq.pdb
+c:\temp\Linq\Linq\obj\Debug\Linq.csprojResolveAssemblyReference.cache
+c:\temp\Linq\Linq\obj\Debug\Linq.exe
+c:\temp\Linq\Linq\obj\Debug\Linq.pdb
+C:\temp\LinqCompleted\Linq\bin\Debug\Linq.exe.config
+C:\temp\LinqCompleted\Linq\obj\Debug\Linq.exe
+C:\temp\LinqCompleted\Linq\obj\Debug\Linq.pdb
+C:\temp\LinqCompleted\Linq\bin\Debug\Linq.exe
+C:\temp\LinqCompleted\Linq\bin\Debug\Linq.pdb
+C:\temp\LinqCompleted\Linq\obj\Debug\Linq.csprojResolveAssemblyReference.cache
+C:\Users\Karine\Dropbox\Web III\20142015\Theorie\Hfdst05\LinqCompletedV1\Linq\bin\Debug\Linq.exe.config
+C:\Users\Karine\Dropbox\Web III\20142015\Theorie\Hfdst05\LinqCompletedV1\Linq\obj\Debug\Linq.exe
+C:\Users\Karine\Dropbox\Web III\20142015\Theorie\Hfdst05\LinqCompletedV1\Linq\obj\Debug\Linq.pdb
+C:\Users\Stefaan\Dropbox\Web III\20142015\Theorie\Hfdst05\LinqCompletedV1\Linq\bin\Debug\Linq.exe.config
+C:\Users\Stefaan\Dropbox\Web III\20142015\Theorie\Hfdst05\LinqCompletedV1\Linq\obj\Debug\Linq.exe
+C:\Users\Stefaan\Dropbox\Web III\20142015\Theorie\Hfdst05\LinqCompletedV1\Linq\obj\Debug\Linq.pdb
